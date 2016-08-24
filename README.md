@@ -1,0 +1,1 @@
+This module provides internationalization tools to atomar sites.
