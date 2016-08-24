@@ -34,8 +34,12 @@ function menu() {
  * Implements hook_url()
  */
 function url() {
-    return array(
-        '/api/(?P<api>[a-zA-Z\_-]+)/?(\?.*)?' => 'app\controller\Api'
+    return array();
+}
+
+function libraries() {
+    return array (
+      'I18n.php'
     );
 }
 
@@ -55,5 +59,7 @@ function twig_function() {
     // value: actual_function_name
     // You may use object functions as well
     // e.g. ObjectClass::actual_function_name
-    return array();
+    return array(
+      'i18n'=>'I18n::say'
+    );
 }
