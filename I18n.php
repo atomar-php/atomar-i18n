@@ -30,7 +30,7 @@ class I18n {
    * sets the locale that will be used when fetching phrases in the method say().
    * @param  string $i18n
    */
-  public static function select_language($i18n) {
+  public static function select_locale($i18n) {
     variable_set('i18n', $i18n);
   }
 
